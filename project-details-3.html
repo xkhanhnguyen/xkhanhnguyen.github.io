@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <title>Project Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -23,14 +23,15 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: iPortfolio
+  * Template Name: iproject
   * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Template URL: https://bootstrapmade.com/iproject-bootstrap-project-websites-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -74,36 +75,47 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
+          <h2>Project Details</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Portfoio Details</li>
+            <li>Project Details</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <!-- ======= project Details Section ======= -->
+    <section id="project-details" class="project-details">
       <div class="container">
 
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
+            <div class="project-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="assets/img/project/project-3.webp" alt="Model Hyperparameter Selection">
+                  <center>
+                    <p><b>Model Hyperparameter Selection</b></p>
+                  </center>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="assets/img/project/project-details-3.1.webp"
+                    alt="Simple Baseline Model Epoch vs. Mean Absolute Error">
+                  <center>
+                    <p><b>Simple Baseline Model Epoch vs. Mean Absolute Error</b></p>
+                  </center>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/project/project-details-3.2.webp"
+                    alt="Scalar Pattern Model Epoch vs. Mean Absolute Error">
+                  <center>
+                    <p><b>Scalar Pattern Model Epoch vs. Mean Absolute Error</b></p>
+                  </center>
                 </div>
 
               </div>
@@ -112,27 +124,37 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+            <div class="project-info">
+              <h3>Recommendation Systems via Matrix Factorization</h3>
+              <p> December 2020</p>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+                This project was the <a href="https://www.cs.tufts.edu/comp/135/2020f/projectC.html">third project</a> for my machine learning class. The project aims to
+                  train a machine learning algorithm using MovieLens 100k dataset for movie recommendation by optimizing
+                  the model's predictive power. We were given a clean preprocessed version of the MovieLens 100k dataset
+                  with 943 users' ratings of 1682 movies. The input to our prediction system is a (user id, movie id)
+                  pair. Our predictor's output will be a scalar rating y in range (1,5) — a rating of 1 is the worst
+                  possible, a rating of 5 is the best. Our main task is to predict the ratings of all user-movie pairs.
+                  The recommendation system is performed using four different models.
+                </p>
+                  <ul>
+                    <li>Simple Baseline Model with SGD and Autograd</li>
+                    <li>One-Scalar-Per-Item Baseline with SGD and Autograd</li>
+                    <li>One-Vector-Per-Item Collaborative Filtering with SGD and Autograd</li>
+                    <li>KNNWithMeans classifier from the surprise package</li>
+                  </ul>
+              <a href="https://towardsdatascience.com/recommendation-systems-via-matrix-factorization-28e7d0aa8ca7">Project report</a>
+              
+            </div>
+            <div class="project-description">
+              <h2></h2>
+              
             </div>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section><!-- End project Details Section -->
 
   </main><!-- End #main -->
 
@@ -140,19 +162,20 @@
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
+        &copy; Copyright <strong><span>iproject</span></strong>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iproject-bootstrap-project-websites-template/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
