@@ -506,6 +506,8 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  height: calc(0.664 * 15vw);
+  /* line-height: 15pt; */
 }
 
 .project .project-wrap::before {
