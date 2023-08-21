@@ -537,7 +537,7 @@ section {
 
 .project .project-wrap .project-links a {
   color: #fff;
-  font-size: 28px;
+  font-size: 1rem;
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
@@ -565,6 +565,10 @@ section {
   bottom: 0;
 }
 
+.project .project-wrap img {
+  height: auto;
+  max-width: 100%;
+}
 
 
 /*--------------------------------------------------------------
