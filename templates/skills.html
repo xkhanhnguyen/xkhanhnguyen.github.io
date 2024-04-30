@@ -172,21 +172,6 @@
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
   <script src="index.js"></script>
-  <script>
-    // Function to load common HTML components
-    function loadCommonComponents() {
-        // Load header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header-placeholder').innerHTML = html;
-            });
-
-    }
-
-    // Call the function to load common components when the page loads
-    window.onload = loadCommonComponents;
-</script>
 
 </body>
 
