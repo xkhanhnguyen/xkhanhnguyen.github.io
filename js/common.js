@@ -1,4 +1,3 @@
-// index.js
 
 // Function to fetch and insert HTML content into a specified element
 function fetchAndInsertHTML(url, elementId) {
@@ -18,8 +17,11 @@ function fetchAndInsertHTML(url, elementId) {
       });
   }
   
+// Wrap the function calls in an event listener to ensure they run after the DOM is loaded
+document.addEventListener("DOMContentLoaded", function() {
   // Call the fetchAndInsertHTML function to fetch and insert header.html into the header element
-  fetchAndInsertHTML('../component/header.html', 'header-placeholder');
-  
+  fetchAndInsertHTML('../components/header.html', 'header-placeholder');
+
   // Call the fetchAndInsertHTML function to fetch and insert footer.html into the footer element
-  fetchAndInsertHTML('../component/footer.html', 'footer-placeholder');
+  fetchAndInsertHTML('../components/footer.html', 'footer-placeholder');
+});
