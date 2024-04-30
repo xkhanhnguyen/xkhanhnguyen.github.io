@@ -13,9 +13,6 @@ function fetchAndInsertHTML(url, elementId) {
       const container = document.createElement('div');
       container.innerHTML = html;
 
-      // Apply additional CSS styling or adjustments to the fetched HTML content
-      container.classList.add('d-flex flex-column', 'profile', 'nav-menu navbar'); // Add a CSS class to style the content as sidebar
-
       // Insert the modified HTML content into the placeholder element
       document.getElementById(elementId).appendChild(container);
     })
