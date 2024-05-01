@@ -9,12 +9,23 @@ function fetchAndInsertHTML(url, elementId) {
     })
     // Read the response as text
     .then(html => {
+      console.log('Fetched HTML content:', html); // Log the fetched HTML content
+      
       // Create a div element to contain the fetched HTML content
       const container = document.createElement('div');
+      container.classList.add('d-flex', 'flex-column'); // Add flex-column class
+      
+      console.log('Container element:', container); // Log the container element before modification
+      
+      // Set the container's innerHTML to the fetched HTML content
       container.innerHTML = html;
 
+      console.log('Container element after modification:', container); // Log the container element after modification
+      
       // Insert the modified HTML content into the placeholder element
-      document.getElementById(elementId).appendChild(container);
+      const placeholder = document.getElementById(elementId);
+      placeholder.appendChild(container);
+      console.log('Inserted HTML content into placeholder:', placeholder); // Log the placeholder element after insertion
     })
     .catch(error => {
       console.error('There was a problem fetching the HTML:', error);
