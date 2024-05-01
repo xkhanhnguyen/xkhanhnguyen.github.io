@@ -36,7 +36,6 @@ function fetchAndInsertHTML(url, elementId) {
 document.addEventListener("DOMContentLoaded", function() {
   // Call the fetchAndInsertHTML function to fetch and insert xxx.html into the xxx element
   fetchAndInsertHTML('../components/header.html', 'header-placeholder');
-
   fetchAndInsertHTML('../components/footer.html', 'footer-placeholder');
 
   fetchAndInsertHTML('../templates/resume.html', 'resume');
