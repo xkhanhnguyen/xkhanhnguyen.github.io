@@ -34,9 +34,12 @@ function fetchAndInsertHTML(url, elementId) {
 
 // Wrap the function calls in an event listener to ensure they run after the DOM is loaded
 document.addEventListener("DOMContentLoaded", function() {
-  // Call the fetchAndInsertHTML function to fetch and insert header.html into the header element
+  // Call the fetchAndInsertHTML function to fetch and insert xxx.html into the xxx element
   fetchAndInsertHTML('../components/header.html', 'header-placeholder');
 
-  // Call the fetchAndInsertHTML function to fetch and insert footer.html into the footer element
   fetchAndInsertHTML('../components/footer.html', 'footer-placeholder');
+
+  fetchAndInsertHTML('../templates/resume.html', 'resume');
+  fetchAndInsertHTML('../templates/skills.html', 'skills');
+  fetchAndInsertHTML('../templates/projects.html', 'projects');
 });
