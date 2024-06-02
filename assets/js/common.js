@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetchAndInsertHTML('../components/header.html', 'header-placeholder');
   fetchAndInsertHTML('../components/footer.html', 'footer-placeholder');
 
-  fetchAndInsertHTML('../templates/resume.html', 'resume');
-  fetchAndInsertHTML('../templates/skills.html', 'skills');
-  fetchAndInsertHTML('../templates/projects.html', 'projects');
+  // fetchAndInsertHTML('../templates/resume.html', 'resume');
+  // fetchAndInsertHTML('../templates/skills.html', 'skills');
+  // fetchAndInsertHTML('../templates/projects.html', 'projects');
 });
